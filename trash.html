@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap and Swiper Example</title>
+    <link rel="stylesheet" href="style.css" />
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- original bootstrap carousel -->
+<section class="slider-section">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators mb-0">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+        class="active circle-btn-sliders" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="circle-btn-sliders"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="circle-btn-sliders"
+        aria-label="Slide 3"></button>
+
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" class="circle-btn-sliders"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/banner2.webp" class="d-block w-100" alt="..." />
+        <div class="loremk position-absolute top-0 w-100 h-100">
+          <div class="container-xxl d-flex justify-content-start">
+            <div class="bg-white p-2 p-sm-4 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container">
+              <!-- Slider Heading -->
+              <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                Embroidered Merchandise Mastery<span class="slider-heading-span">.</span>
+              </h2>
+
+              <!-- Slider Description -->
+              <div class="slider-description">
+                Unleash your story with our professional custom printing
+                services. Experience perfection, on-time delivery,
+                guaranteed.
+              </div>
+
+              <!-- Slider Button -->
+              <div>
+                <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                  <span class="d-none d-md-block">Request a Custom Quote</span>
+                  <span class="d-block d-md-none">Free Quote</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner01.webp" class="d-block w-100" alt="Banner Image" />
+        <div class="loremk position-absolute top-0 w-100 h-100">
+          <div class="container-xxl d-flex justify-content-start">
+            <div class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container"
+              style="max-width: 500px">
+              <!-- Slider Heading -->
+              <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                Print<span class="slider-heading-span">.</span>
+
+                Personalize<span class="slider-heading-span">.</span>
+
+                Elevate<span class="slider-heading-span">.</span>
+              </h2>
+
+              <!-- Slider Description -->
+              <div class="slider-description">
+                Unleash your story with our professional custom printing
+                services. Experience perfection, on-time delivery,
+                guaranteed.
+              </div>
+
+              <!-- Slider Button -->
+              <div>
+                <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                  <span class="d-none d-md-block">Request a Custom Quote</span>
+                  <span class="d-block d-md-none">Free Quote</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./assets/banner4.webp" class="d-block w-100" alt="..." />
+        <div class="loremk position-absolute top-0 w-100 h-100">
+          <div class="container-xxl d-flex justify-content-start">
+            <div class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container">
+              <!-- Slider Heading -->
+              <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                Personalized Printing For Sports Gear<span class="slider-heading-span">.</span>
+              </h2>
+
+              <!-- Slider Description -->
+              <div class="slider-description">
+                Unleash your story with our professional custom printing
+                services. Experience perfection, on-time delivery,
+                guaranteed.
+              </div>
+
+              <!-- Slider Button -->
+              <div>
+                <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                  <span class="d-none d-md-block">Request a Custom Quote</span>
+                  <span class="d-block d-md-none">Free Quote</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner3.webp" class="d-block w-100" alt="..." />
+        <div class="loremk position-absolute top-0 w-100 h-100">
+          <div class="container-xxl d-flex justify-content-start">
+            <div class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container">
+              <!-- Slider Heading -->
+              <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                Design Your Custom Hardware<span class="slider-heading-span">.</span>
+              </h2>
+
+              <!-- Slider Description -->
+              <p class="slider-description">
+                Make a statement with our custom embroidered hats that
+                guarantee attention. Showcase your personality or brand
+                identity with a personalized logo on your headwear.
+              </p>
+
+              <!-- Slider Button -->
+              <div>
+                <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                  <span class="d-none d-md-block">Request a Custom Quote</span>
+                  <span class="d-block d-md-none">Free Quote</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- end of bootstrap carousel -->
+
+    <section class="slider-section">
+      <div class="swiper mySwipers">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/banner2.webp" class="d-block w-100" alt="..." />
+            <div class="slider-p-cont position-absolute top-0 w-100 h-100">
+              <div class="container-xxl d-flex justify-content-start">
+                <div
+                  class="bg-white p-2 p-sm-4 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container"
+                >
+                  <!-- Slider Heading -->
+                  <h2
+                    class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column"
+                  >
+                    Embroidered Merchandise Mastery<span
+                      class="slider-heading-span"
+                      >.</span
+                    >
+                  </h2>
+
+                  <!-- Slider Description -->
+                  <div class="slider-description">
+                    Unleash your story with our professional custom printing
+                    services. Experience perfection, on-time delivery,
+                    guaranteed.
+                  </div>
+
+                  <!-- Slider Button -->
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-danger slider-btn p-1 p-sm-2"
+                    >
+                      <span class="d-none d-md-block"
+                        >Request a Custom Quote</span
+                      >
+                      <span class="d-block d-md-none">Free Quote</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/banner01.webp"
+              class="d-block w-100"
+              alt="Banner Image"
+            />
+            <div class="slider-p-cont position-absolute top-0 w-100 h-100">
+              <div class="container-xxl d-flex justify-content-start">
+                <div
+                  class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container"
+                  style="max-width: 500px"
+                >
+                  <!-- Slider Heading -->
+                  <h2
+                    class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column"
+                  >
+                    Print<span class="slider-heading-span">.</span>
+
+                    Personalize<span class="slider-heading-span">.</span>
+
+                    Elevate<span class="slider-heading-span">.</span>
+                  </h2>
+
+                  <!-- Slider Description -->
+                  <div class="slider-description">
+                    Unleash your story with our professional custom printing
+                    services. Experience perfection, on-time delivery,
+                    guaranteed.
+                  </div>
+
+                  <!-- Slider Button -->
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-danger slider-btn p-1 p-sm-2"
+                    >
+                      <span class="d-none d-md-block"
+                        >Request a Custom Quote</span
+                      >
+                      <span class="d-block d-md-none">Free Quote</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+         
+              <img src="./assets/banner4.webp" class="d-block w-100" alt="..." />
+              <div class="slider-p-cont position-absolute top-0 w-100 h-100">
+                <div class="container-xxl d-flex justify-content-start">
+                  <div class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container">
+                    <!-- Slider Heading -->
+                    <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                      Personalized Printing For Sports Gear<span class="slider-heading-span">.</span>
+                    </h2>
+            
+                    <!-- Slider Description -->
+                    <div class="slider-description">
+                      Unleash your story with our professional custom printing
+                      services. Experience perfection, on-time delivery,
+                      guaranteed.
+                    </div>
+            
+                    <!-- Slider Button -->
+                    <div>
+                      <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                        <span class="d-none d-md-block">Request a Custom Quote</span>
+                        <span class="d-block d-md-none">Free Quote</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              
+          </div>
+          <div class="swiper-slide">
+           
+              <img src="./assets/banner3.webp" class="d-block w-100" alt="..." />
+              <div class="slider-p-cont position-absolute top-0 w-100 h-100">
+                <div class="container-xxl d-flex justify-content-start">
+                  <div class="bg-white p-2 p-sm-3 d-md-flex flex-column gap-2 gap-xl-4 slider-content-container">
+                    <!-- Slider Heading -->
+                    <h2 class="slider-heading-wrapper flex-column flex-sm-row gap-2 flex-lg-column">
+                      Design Your Custom Hardware<span class="slider-heading-span">.</span>
+                    </h2>
+            
+                    <!-- Slider Description -->
+                    <p class="slider-description">
+                      Make a statement with our custom embroidered hats that
+                      guarantee attention. Showcase your personality or brand
+                      identity with a personalized logo on your headwear.
+                    </p>
+            
+                    <!-- Slider Button -->
+                    <div>
+                      <button type="button" class="btn btn-danger slider-btn p-1 p-sm-2">
+                        <span class="d-none d-md-block">Request a Custom Quote</span>
+                        <span class="d-block d-md-none">Free Quote</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+          </div>
+          
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <div class="swiper promotionalSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="./app.js"></script> -->
+    <script src="./swiperCarousel.js"></script>
+  </body>
+</html>
