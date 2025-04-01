@@ -332,54 +332,135 @@ class HeaderComponent extends HTMLElement {
                   >
                     <div class="bg-white">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                          Offcanvas
-                        </h5>
+                        <div class="col-8  company-logo-cont  col-md-4 col-lg-3 order-2 d-flex align-items-center justify-content-lg-start justify-content-center">
+                          <img src="./assets/logo.png" class="img-fluid company-logo me-lg-4 " alt="Company Logo">
+                        </div>
                       </div>
                       <div class="offcanvas-body">
                         <ul
-                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                          class="navbar-nav justify-content-end flex-grow-1"
                         >
-                          <li class="nav-item">
-                            <a
-                              class="nav-link active"
-                              aria-current="page"
-                              href="#"
-                              >Home</a
-                            >
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a
-                              class="nav-link dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
+                        <div class="accordion footer-accordion" id="accordionExample">
+                          <div class="accordion-item bg-transparent border-0 border-bottom">
+                            <button
+                              class="ps-1 accordion-button collapsed accordion-header footer-title bg-transparent border-0"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne"
                               aria-expanded="false"
+                              aria-controls="flush-collapseOne"
                             >
-                              Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Another action</a
-                                >
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Something else here</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
+                              My Account
+                            </button>
+                            <div
+                              id="flush-collapseOne"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body footer-ul">
+                                <li class="footer-li"><a href="">About Us</a></li>
+                                <li class="footer-li"><a href="">Contact Us</a></li>
+                                <li class="footer-li"><a href="">My Account</a></li>
+                                <li class="footer-li">
+                                  <a href="">Find Your Perfect Garment Size</a>
+                                </li>
+                                <li class="footer-li"><a href="">Affiliate Program</a></li>
+                                <li class="footer-li"><a href="">Selling What Sells</a></li>
+                                <li class="footer-li"><a href="">Advance Search</a></li>
+                              </div>
+                            </div>
+                          </div>
+            
+                          <div class="accordion-item bg-transparent border-0 border-bottom">
+                            <button
+                              class="ps-1 accordion-button collapsed accordion-header footer-title bg-transparent border-0"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwo"
+                            >
+                              Apparel Factory
+                            </button>
+                            <div
+                              id="flush-collapseTwo"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body footer-ul">
+                                <li class="footer-li"><a href="">FAQ</a></li>
+                                <li class="footer-li"><a href="">Blog</a></li>
+                                <li class="footer-li"><a href="">Coupons & Specials</a></li>
+                                <li class="footer-li">
+                                  <a href="">Payment Information</a>
+                                </li>
+                                <li class="footer-li"><a href="">Affiliate Program</a></li>
+                                <li class="footer-li">
+                                  <a href="">Apparel Buying Tips</a>
+                                </li>
+                                <li class="footer-li"><a href="">Education Center</a></li>
+                              </div>
+                            </div>
+                          </div>
+            
+                          <div class="accordion-item bg-transparent border-0 border-bottom">
+                            <button
+                              class="ps-1 accordion-button collapsed accordion-header footer-title bg-transparent border-0"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThree"
+                            >
+                              Services
+                            </button>
+                            <div
+                              id="flush-collapseThree"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body footer-ul">
+                                <li class="footer-li"><a href="">Embroidery Service</a></li>
+                                <li class="footer-li">
+                                  <a href="">Heat Transfer Service</a>
+                                </li>
+                                <li class="footer-li">
+                                  <a href="">Screen Printing Service</a>
+                                </li>
+                                <li class="footer-li"><a href="">Applique Service</a></li>
+                                <li class="footer-li">
+                                  <a href="">Laser Etching Service</a>
+                                </li>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item bg-transparent border-0 border-bottom">
+                            <button
+                              class="ps-1 accordion-button collapsed accordion-header footer-title bg-transparent border-0"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseFour"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseFour"
+                            >
+                              Contact Information
+                            </button>
+                            <div
+                              id="flush-collapseFour"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="p-3">
+                                <span class="mb-1">PHONE</span>
+                                <p class="footer-li py-1"><a href="">+1-800-316-9833</a></p>
+                                <span>WORKING DAYS/HOURS:</span>
+                                <p class="footer-li py-1">
+                                  <a href="">Mon - Fri / 9:00 AM - 6:00 PM</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         </ul>
                         <form class="d-flex mt-3" role="search">
                           <input
